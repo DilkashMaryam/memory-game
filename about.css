@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('Capture.PNG') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: plum;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+    font-size: 2.5em;
+    margin-top: 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    color: #555;
+    font-size: 2em;
+    margin-top: 20px;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-selection {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container {
+    padding: 10px;
+}
+
+.card {
+    background: linear-gradient(to bottom, #fff, #ffe4e1);
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 600px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #ff1493;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.column {
+    flex: 1;
+    max-width: 300px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.welcome-section, .story-section, .team-section, .values-section, .offers-section, .cta-section {
+    margin: 20px 0;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    background: #ffe4e1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.card ul li:hover {
+    background: #fadadd;
+}
